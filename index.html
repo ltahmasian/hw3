@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Simple Setups | HW3 Email Campaign</title>
+  <meta charset="utf-8" />
+  <!-- this helps the email scale nicely on phones instead of looking tiny -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<!-- most email styling is done inline because email apps are picky -->
+<body style="margin:0; padding:0; background-color:#f3f4f6;">
+
+  <!-- outer table = full-width “background” wrapper -->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+         style="background-color:#f3f4f6;">
+    <tr>
+      <!-- this centers everything and adds breathing room around the email -->
+      <td align="center" style="padding:30px 10px;">
+
+        <!-- inner table = the actual email card -->
+        <!-- 600px is the common standard width for email layouts -->
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"
+               style="width:100%; max-width:600px; background-color:#ffffff; border-collapse:collapse;">
+
+          <!-- header row -->
+          <tr>
+            <td style="background-color:#111827; padding:18px 20px;">
+              <div style="font-family:arial, sans-serif; font-size:18px; font-weight:bold; color:#ffffff;">
+                Simple Setups
+              </div>
+              <div style="font-family:arial, sans-serif; font-size:12px; color:#d1d5db; margin-top:6px;">
+                HW3 Email Campaign
+              </div>
+            </td>
+          </tr>
+
+          <!-- title + intro text row -->
+          <tr>
+            <td style="padding:20px;">
+              <h1 style="margin:0; font-family:arial, sans-serif; font-size:24px; color:#111827;">
+                5-minute Desk Reset
+              </h1>
+
+              <p style="margin:10px 0 0 0; font-family:arial, sans-serif; font-size:16px; line-height:22px; color:#374151;">
+                A simple checklist to keep your setup clean, minimal, and productive.
+              </p>
+            </td>
+          </tr>
+
+          <!-- hero image row -->
+          <tr>
+            <td align="center" style="padding:0 20px 20px 20px;">
+              <!-- the key part: width:100% makes it shrink on mobile -->
+              <!-- max-width keeps it looking nice on desktop -->
+              <!-- height:auto prevents weird stretching -->
+              <img src="images/setupPic.jpg"
+                   alt="minimal desk setup with laptop and notebook"
+                   style="width:100%; max-width:560px; height:auto; display:block; border-radius:10px;" />
+            </td>
+          </tr>
+
+          <!-- what’s included row -->
+          <tr>
+            <td style="padding:0 20px 10px 20px;">
+              <h2 style="margin:0 0 10px 0; font-family:arial, sans-serif; font-size:18px; color:#111827;">
+                What’s included:
+              </h2>
+
+              <p style="margin:0 0 8px 0; font-family:arial, sans-serif; font-size:15px; line-height:22px; color:#374151;">
+                • Quick 5-step reset checklist
+              </p>
+              <p style="margin:0 0 8px 0; font-family:arial, sans-serif; font-size:15px; line-height:22px; color:#374151;">
+                • Minimal cable-management tip
+              </p>
+              <p style="margin:0; font-family:arial, sans-serif; font-size:15px; line-height:22px; color:#374151;">
+                • One affordable “small upgrade” idea
+              </p>
+            </td>
+          </tr>
+
+          <!-- background image section row -->
+          <tr>
+            <td style="padding:20px;">
+              <!-- this is the “text on background image” requirement -->
+              <!-- some email clients can be weird about background images, so we also set a background color -->
+              <div style="
+                background-image:url('images/bg-texture.jpg');
+                background-size:cover;
+                background-position:center;
+                background-color:#111827;
+                border-radius:12px;
+                padding:16px;
+              ">
+                <p style="margin:0 0 6px 0; font-family:arial, sans-serif; font-size:12px; color:#e5e7eb;">
+                  This week’s focus:
+                </p>
+
+                <p style="margin:0; font-family:arial, sans-serif; font-size:16px; font-weight:bold; color:#ffffff;">
+                  Make your desk “ready to start” in under 5 minutes.
+                </p>
+              </div>
+            </td>
+          </tr>
+
+          <!-- button row -->
+          <tr>
+            <td align="center" style="padding:10px 20px 30px 20px;">
+              <!-- centered button + big padding so it’s easy to click/tap -->
+              <a href="#"
+                 style="
+                   display:inline-block;
+                   font-family:arial, sans-serif;
+                   font-size:16px;
+                   color:#ffffff;
+                   background-color:#111827;
+                   text-decoration:none;
+                   padding:16px 28px;
+                   border-radius:10px;
+                 ">
+                Get the checklist
+              </a>
+            </td>
+          </tr>
+
+          <!-- footer row -->
+          <tr>
+            <td style="background-color:#f9fafb; padding:18px 20px;">
+              <p style="margin:0; font-family:arial, sans-serif; font-size:12px; line-height:18px; color:#6b7280;">
+                You’re receiving this email because you signed up for Simple Setups updates.
+              </p>
+
+              <!-- always include an unsubscribe link in email campaigns -->
+              <p style="margin:10px 0 0 0; font-family:arial, sans-serif; font-size:12px;">
+                <a href="#" style="color:#111827; text-decoration:underline;">
+                  Unsubscribe
+                </a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+        <!-- end inner table -->
+
+      </td>
+    </tr>
+  </table>
+  <!-- end outer table -->
+
+</body>
+</html>
